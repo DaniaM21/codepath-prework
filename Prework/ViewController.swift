@@ -21,13 +21,13 @@ class ViewController: UIViewController {
     @IBOutlet var BackgroundView: UIView!
     
     @IBAction func ButtonClicked(_ sender: Any) {
-        TextLabel.textColor = UIColor.orange
+        TextLabel.textColor = UIColor.magenta
     }
     
     @IBAction func ButtonClickedTextString(_ sender: Any) {
         var textString = UserText.text ?? ""
         if textString == "" {
-            textString = "Hello!"
+            textString = "Goodbye 👋"
             TextLabel.text = textString
         } else {
             TextLabel.text = textString
@@ -39,9 +39,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BackgroundViewTouched(_ sender: Any) {
-        TextLabel.textColor = UIColor.yellow
-        TextLabel.text = "Hello!"
-        BackgroundView.backgroundColor = UIColor.systemTeal
+        TextLabel.textColor = UIColor.systemIndigo
+        TextLabel.text = "Hello from Dania!"
+        BackgroundView.backgroundColor = UIColor.systemOrange
     }
     
     
